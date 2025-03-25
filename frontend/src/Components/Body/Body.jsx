@@ -10,7 +10,7 @@ export const Body = ({ showPopup }) => {
   useEffect(() => {
     const fetchJobs = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/jobs"); // Your backend API URL
+        const response = await axios.get("https://job-management-portal.onrender.com/api/jobs"); // Your backend API URL
         setJobs(response.data); // Set the fetched jobs in state
       } catch (error) {
         console.error("Error fetching job postings:", error);

@@ -30,7 +30,7 @@ export const Popup = ({ setShowPopup }) => {
     try {
       // Use axios to send the POST request
       const response = await axios.post(
-        "http://localhost:5000/api/jobs", // Your backend API URL
+        "https://job-management-portal.onrender.com/api/jobs", // Your backend API URL
         {
           title: formData.title,
           companyname: formData.companyname,
