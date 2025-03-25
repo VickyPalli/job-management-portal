@@ -55,6 +55,10 @@ const jobSchema = new mongoose.Schema(
 
 const Job = mongoose.model("jobs", jobSchema, "jobs");
 
+app.get("/", (req, res) => {
+  res.send("Job Management Ms Running");
+});
+
 // API 1: Get all job postings
 app.get("/api/jobs", async (req, res) => {
   try {
