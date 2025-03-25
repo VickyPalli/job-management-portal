@@ -9,5 +9,6 @@ export default defineConfig({
     host: "0.0.0.0", // Allows access from external networks
     port: process.env.PORT || 5173, // Uses the environment variable or defaults to 5173
     strictPort: true,
+    allowedHosts: ["job-management-portal-app.onrender.com"], // Allow this host
   },
 });
